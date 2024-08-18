@@ -8,7 +8,7 @@ import { z } from "zod";
 import CustomFormField from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
 import { UserFormValidation } from "@/lib/validation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export enum FormFieldType {
   INPUT = "input",
