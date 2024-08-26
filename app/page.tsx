@@ -19,7 +19,7 @@ export default function Home() {
             priority
           />
           <PatientForm />
-          <div className="text-14-regular mt-20 flex justify-between">
+          <div className="text-14-regular mt-4 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
               © {currentYear} CarePulse
             </p>
