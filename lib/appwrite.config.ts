@@ -1,6 +1,6 @@
-import { Client, Databases, Users, Messaging, Storage } from "node-appwrite";
+import * as sdk from "node-appwrite";
 
-const client = new Client();
+const client = new sdk.Client();
 
 const initClient = () => {
     const endpoint = process.env.NEXT_PUBLIC_ENDPOINT;
@@ -27,10 +27,10 @@ const isInitialized = initClient();
 let databases, users, messaging, storage;
 
 if (isInitialized) {
-    databases = new Databases(client);
-    users = new Users(client);
-    messaging = new Messaging(client);
-    storage = new Storage(client);
+    databases = new sdk.Databases(client);
+    users = new sdk.Users(client);
+    messaging = new sdk.Messaging(client);
+    storage = new sdk.Storage(client);
 }
 
 export { databases, users, messaging, storage };
